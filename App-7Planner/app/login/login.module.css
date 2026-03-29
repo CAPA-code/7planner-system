@@ -1,0 +1,192 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background: #1e1e1e;
+}
+
+.logo-7planner {
+    width: 300px;
+    margin-bottom: 30px;
+    display: block;
+    margin: auto;
+}
+
+.container-login {
+    width: 583px;
+    height: 473px;
+    background: rgba(126, 126, 126, 39%);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.inputs input {
+        display: flex;
+        width: 450px;
+        height: 84px;
+        border-radius: 15px;
+        border: none;
+        margin-top: 11px;
+        padding: 0 20px;
+        font-size: 18px;
+        background: rgba(104, 104, 104, 90%);
+        color: white;
+        outline: none;
+}
+
+.inputs input::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
+.iconEye {
+    position: absolute;
+    color: white;
+    margin-left: 416px;
+    margin-top: 45px;
+}
+
+.iconEye:hover {
+    opacity: 1;
+}
+
+
+
+.helpText {
+    color: white;
+    font-weight: 100;
+    font-size: 12px;
+    margin-top: 10px;
+    width: 450px; /* Alinhado com o input */
+    opacity: 0.8;
+    text-align: left;
+}
+
+.link {
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: left;
+    margin-right: 335px;
+}
+
+.link:hover {
+    color: #c4c4c4;
+}
+
+#button-login {
+    border: none;
+    border-radius: 16px;
+    background: #003366;
+    color: white;
+    font-size: 18px;
+    width: 450px;
+    height: 71px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#button-login:hover {
+    background: #002244;
+}
+
+.logo-7code {
+    display : block;
+    margin: 0 auto;
+    width: 120px;
+    margin-top: 30px;
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+
+.text-7code {
+    color: rgb(133, 133, 133);
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 11px;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 110px;
+}
+
+.footer {
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.text-footer {
+    color: white;
+    font-family: sans-serif;
+    font-size: 12px;
+    opacity: 20%;
+}
+
+
+
+/* Responsividade para Celulares */
+@media (max-width: 600px) {
+    .logo-7planner{
+        width: 200px;
+        margin-top: 216px;
+    }
+
+    .container-login {
+        display: block;
+        margin: auto;
+        width: 400px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .inputs input {
+        width: 370px;
+        height: 60px;
+    }
+
+    .iconEye {
+        margin-left: 336px;
+        margin-top: 30px;
+    }
+
+
+    .helpText {
+        width: 100%;
+    }
+
+    .link {
+        margin-right: 2px;
+        text-align: left;
+    }
+
+    #button-login {
+        width: 100%;
+        height: 60px;
+    }
+
+    .logo-7code {
+        display: block;
+        margin: auto;
+
+    }
+}
