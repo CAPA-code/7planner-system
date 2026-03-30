@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 import { supabase } from "@/lib/supabase"
+import styles from './dashboard.module.css'
 
 export default function Dashboard() {
   const router = useRouter()
@@ -23,6 +24,7 @@ export default function Dashboard() {
         .eq("id", user.id)
         .single()
 
+
       if (error) {
         console.log(error)
         return
@@ -31,18 +33,25 @@ export default function Dashboard() {
       setRole(data.role)
     }
 
+
     loadUser()
   }, [])
 
+
   return (
     <main>
-      <h1>Bem-vindo ao 7planner 🚀</h1>
+      { /* PAINEL USER | Admin */  }
+      <h1 >Bem-vindo ao 7planner 🚀</h1>
 
-      {role === "admin" && (
-        <button>Painel Admin 👑</button>
+      { /* PAINEL ADMIN */  }
+      {role === "admin" &&  (
+
+        <button className={styles['buttonAdmin']}>Painel Admin 👑</button>
+
+
       )}
+      
 
-      <p>Dashboard inicial</p>
     </main>
   )
 }

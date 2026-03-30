@@ -7,3 +7,18 @@
     width: 100%;
     background: #1e1e1e;
 }
+
+
+
+/* PAINEL ADMIN */
+.buttonAdmin {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+}

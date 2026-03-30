@@ -1,0 +1,50 @@
+.logo-7code {
+    display: block;
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #6e6e6e;
+}
+
+.loginButton {
+    display: block;
+    margin: 30px auto;
+    padding: 60px;
+    color: #fff;
+    background-color: #5f5f5f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.loginButton:hover {
+    background-color: #555555;
+}
+
+.loginButton:active {
+    background-color: #003f7f;
+}
+
+
+.containerButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo-7planner {
+    display: block;
+    width: 200px;
+    margin: auto;
+   position: absolute;
+   width: 100px;
+   cursor: pointer;
+    
+}
+
